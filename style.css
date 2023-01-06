@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto:wght@300;500&display=swap');
+:root {
+    --word_color: #fdfefe;
+}
+a {
+    text-decoration: none;
+    color: var(--word_color);
+    font-size: 15px;
+}
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width:  8px;
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, .06);
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, .06);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+body {
+    background-color: #98b5ff;
+}
+.todo-list {
+    width: 100%;
+    height: 600px;
+    max-width: 450px;
+    margin: 50px auto;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: #2e4997;
+    
+}
+
+.todo-list header {
+    font-size: 30px;
+    font-weight: 550;
+    color: var(--word_color);
+}
+.input-field {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin: 20px 0;
+}
+.input {
+    width: 80%;
+    background-color: #fdfefe;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.input .icon-clear {
+    display: none;
+    outline: none;
+    padding: 2px 4px;
+    text-align: center;
+    cursor: pointer; 
+}
+.input .show {
+    display: inline;
+}
+
+
+.content {
+    border: none;
+    width: 90%;
+    height: 100%;
+    outline: none;
+    /* border: 1px solid #ccc; */
+    font-size: 17px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.input-field button {
+    width: 50px;
+    height: 100%;
+    margin-left: 5px;
+    cursor: pointer;
+    /* pointer-events: none; */
+    border-radius: 3px;
+    background-color: rgb(226, 225, 225);
+    border: none; 
+}
+.input-field button:hover {
+    opacity: 0.8;
+}
+.btn-save i {
+    font-size: 22px;
+    /* color: #fff; */
+}
+
+#list-task h3 {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+}
+.todolist {
+    max-height: 600px;
+    height: 270px;
+    overflow-y: auto;
+    width: 360px;
+    overflow-x: hidden; 
+}
+.todolist li {
+    position: relative;
+    list-style: none;
+    width: 340px;
+    height: 60px;
+    background: #031956;
+    color: var(--word_color);
+    padding: 0 15px;
+    line-height: 60px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    display: flex;
+    cursor: pointer;
+
+}
+.task-name {
+    width: 320px;
+}
+.task-name p {
+    width: 232px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.todolist li i    {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    /* margin-top: 20px; */
+    right: -70px;
+    top: 50%;
+    margin-right: 10px;
+    transform: translate(-50%,-50%);
+    transition: all 0.3 ease;
+    
+}
+
+.todolist li:hover i,.todolist li:hover a{
+    right: 0;
+}  
+.todolist li a:hover,.todolist li i:hover {
+    color: #3a8585;
+}
+.change {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    /* margin-top: 20px; */
+    right: -120px;
+    margin-left: 20px;
+    top: 50%;
+    margin-right: 15px;
+    transform: translate(-50%,-50%);
+    transition: all 0.3 ease;
+    font-weight: 500;
+}
+
+
+
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.clear {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 35px 10px 35px;
+    position: relative;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    background-color: #2e4997;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.footer span {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
